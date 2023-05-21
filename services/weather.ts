@@ -50,7 +50,7 @@ const getFakeWeather = async () => {
 
 export async function getWeather(searchTerm: string) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=4f234fbb57a943a1aa5184734231605&q=${searchTerm}&days=5&aqi=no&alerts=no&lang=es`
+    `https://api.weatherapi.com/v1/forecast.json?key=4f234fbb57a943a1aa5184734231605&q=${searchTerm}&days=5&aqi=no&alerts=no&lang=es`
   );
   if (!response.ok) {
     throw new Error(response.statusText);

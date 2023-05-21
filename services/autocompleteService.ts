@@ -31,7 +31,7 @@ const getFakeOptions = async () => {
 
 export async function getOptions(searchTerm: string) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/search.json?key=4f234fbb57a943a1aa5184734231605&q=${searchTerm}`
+    `https://api.weatherapi.com/v1/search.json?key=4f234fbb57a943a1aa5184734231605&q=${searchTerm}`
   );
   const data = await response.json();
   // evita poner items con el mismo url
